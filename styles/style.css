@@ -63,10 +63,15 @@ nav {
     box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.400);
 
     padding: 12px 50px;
-    text-align: center;
 }
 
+    nav div#nav-inside {
+        width: 1000px;
+        margin: auto;
+    }
+
     nav a {
+        
         text-decoration: none;
         color: rgb(245, 245, 245);
         padding: 13px 10px;
@@ -75,14 +80,16 @@ nav {
     nav span.left {
         border-left: 1px rgba(0, 0, 0, 0.300) solid;
         border-right: 1px rgba(0, 0, 0, 0.300) solid;
-        margin-right: 250px;
     }
 
+    /*nav span#middle {
+        display: inline-block;
+    }*/
+
     nav span.right {
-        /*float: right;*/
+        float: right;
         border-left: 1px rgba(0, 0, 0, 0.300) solid;
         border-right: 1px rgba(0, 0, 0, 0.300) solid;
-        margin-left: 250px;
     }
 
     nav a:hover {
@@ -202,7 +209,7 @@ footer {
 
     text-align: center;
 
-    box-shadow: 0px -2px 2px 1px rgba(0, 0, 0, 0.300);
+    box-shadow: 0px -2px 2px 1px rgba(0, 0, 0, 0.200);
 }
 
     footer a {
