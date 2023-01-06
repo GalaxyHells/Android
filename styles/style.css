@@ -64,9 +64,9 @@ nav {
 
     padding: 12px 50px;
 }
-
     nav div#nav-inside {
-        width: 1000px;
+        max-width: 1050px;
+        
         margin: auto;
     }
 
