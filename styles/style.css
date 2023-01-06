@@ -1,0 +1,216 @@
+@charset "UFT-8";
+
+/* FONTS */
+
+/* ----- */
+
+/* GENERAL */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --color1: #F9612A;
+    --color2: #DB3B25;
+    --color3: #F23548;
+    --color4: #DB2592;
+    --color5: #EE2AF9;
+
+    --color3-1: #b32634;
+    --color4-1: #aa1e72;
+    --color4-2: #df3c9d;
+}
+/* ----- */
+html, body {
+    width: 100%;
+    
+}
+
+body {
+    background-color: var(--color4);
+    /*background-image: linear-gradient(to bottom, var(--color4), var(--color5), var(--color4), var(--color5), var(--color4));*/
+    background-image: linear-gradient(to bottom, var(--color4), var(--color5), var(--color4));
+}
+
+/* HEADER */
+header {
+    background-image: linear-gradient(var(--color1), var(--color3));
+    height: 180px;
+    
+}
+
+    header h1, header p {
+        text-align: center;
+        color: white;
+    }
+
+    header h1 {
+        padding-top: 20px;
+        padding-bottom: 30px;
+        font-size: 2.5em;
+    }
+
+    header p {
+        max-width: 250px;
+        margin: auto;
+    }
+/* ----- */
+
+/* HEADER */
+nav {
+    background-color: var(--color3);
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.400);
+
+    padding: 12px 50px;
+}
+
+    nav a {
+        text-decoration: none;
+        color: rgb(245, 245, 245);
+        padding: 13px 10px;
+
+    }
+
+    nav span.left {
+        border-left: 1px rgba(0, 0, 0, 0.300) solid;
+        border-right: 1px rgba(0, 0, 0, 0.300) solid;
+    }
+
+    nav span.right {
+        float: right;
+        border-left: 1px rgba(0, 0, 0, 0.300) solid;
+        border-right: 1px rgba(0, 0, 0, 0.300) solid;
+    }
+
+    nav a:hover {
+        background-color: var(--color3-1);
+        border-left: 1px rgba(0, 0, 0, 0.300) solid;
+        border-right: 1px rgba(0, 0, 0, 0.300) solid;
+        font-weight: bold;
+        color: white;
+    }
+/* ----- */
+
+/* MAIN */
+main {
+    /*background-color: rgba(255, 255, 255, 0.712);*/
+    /*background-image: linear-gradient(rgba(255, 255, 255, 0.712), rgba(190, 190, 190, 0.712));*/
+    background-image: linear-gradient(to bottom, rgb(223, 221, 221), rgba(255, 255, 255, 0.712));
+    
+    box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.600);
+
+    min-width: 320px;
+    max-width: 1000px;
+    margin: auto;
+    padding: 10px;
+    border: 100px;
+}
+
+    main h1#title {
+        text-align: center;
+        padding-top: 15px;
+        padding-bottom: 30px;
+        font-size: 2em;
+    }
+
+    main h2 {
+        padding-bottom: 2px;
+        /*text-indent: 10px;*/
+    }
+
+    main p {
+        line-height: 22px;
+        text-align: justify;
+        padding: 8px 0px;
+        text-indent: 20px;
+    }
+
+    main img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+    }
+
+    main img.small {
+        width: 40%;
+    }
+
+    main a {
+        text-decoration: none;
+        color: white;
+        background-color: var(--color4-2);
+        padding: 1px 2px;
+    }
+
+    main a::after {
+        content: " 🔗";
+    }
+
+    main a:hover {
+        text-decoration: underline;
+    }
+
+    main div#container-video {
+        background-color: var(--color4);
+        border-radius: 2px;
+
+        padding: 10px;
+        padding-bottom: 56.5%;
+        margin: 10px;
+
+        position: relative;
+    }
+
+        main div#container-video iframe {
+            position: absolute;
+
+            top: 2%;
+            left: 2%;
+
+            width: 96%;
+            height: 96%;
+        }
+
+    aside {
+        background-color: var(--color3);
+        color: rgb(255, 255, 255);
+        
+        padding: 10px;
+        border-radius: 10px 10px 2px 2px;
+        margin: 20px 0px;
+    }
+
+        aside ul {
+            list-style-position: inside;
+            columns: 2;
+            list-style-type: '\2714\00A0\00A0';
+        }
+/* ----- */
+
+/* FOOOTER */
+footer {
+    background-color: var(--color4-1);
+    color: white;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 20px;
+
+    text-align: center;
+
+    box-shadow: 0px -2px 2px 1px rgba(0, 0, 0, 0.300);
+}
+
+    footer a {
+        text-decoration: none;
+        font-weight: bold;
+        color: white;
+    }
+
+    footer a:hover {
+        text-decoration: underline;
+        font-weight: bolder;
+    }
+/* ----- */
