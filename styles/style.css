@@ -24,7 +24,7 @@
 /* ----- */
 html, body {
     width: 100%;
-    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 body {
@@ -65,11 +65,14 @@ nav {
     padding: 12px 50px;
 }
 
+    nav span#nav-inside {
+        max-width: 1100px;
+    }
+    
     nav a {
         text-decoration: none;
         color: rgb(245, 245, 245);
         padding: 13px 10px;
-
     }
 
     nav span.left {
@@ -87,7 +90,7 @@ nav {
         background-color: var(--color3-1);
         border-left: 1px rgba(0, 0, 0, 0.300) solid;
         border-right: 1px rgba(0, 0, 0, 0.300) solid;
-        font-weight: bold;
+        /*font-weight: bold;*/
         color: white;
     }
 /* ----- */
@@ -123,7 +126,7 @@ main {
         line-height: 22px;
         text-align: justify;
         padding: 8px 0px;
-        text-indent: 20px;
+        /*text-indent: 20px;*/
     }
 
     main img {
